@@ -56,20 +56,25 @@ table {
     border-spacing: 0;
 }
 
-
 /* -------------------- ROOT VARIABLES  -------------------- */
 :root {
-    font-family: "Habibi", serif;
-    font-size: 1.25em;
-    --green:#06A816;
-    --orange:#E75D02;
-    --black:#000000;
-    --white:#ffffff;
+    --teal: #4CA7C0;
+    --purple: #484FB7;
+    --lavender: #6B8FE7;
+    --yellow: #E9BB57;
+    --pink: #D9526F;
+    --dark-gray: #1E1E1E;
+    --white: #ffffff;
+
+    --font-family-header: 'Kavoon', cursive;
+    --font-family-body: 'Inter', sans-serif;
+
+    --font-size-h1: 3em;
+    --font-size-nav-h2: 1.5em;
+    --font-size-h2: 2em;
+    --font-size-h3: 1.5em;
+    --font-size-h4: 1.15em;
 }
-
-/* -------------------- ROOT VARIABLES --------------------------------------- */
-
-
 
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
 
