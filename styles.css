@@ -74,20 +74,100 @@ table {
     --font-size-h2: 2em;
     --font-size-h3: 1.5em;
     --font-size-h4: 1.15em;
+
+    --primary-color: var(--purple);
+    --secondary-color: var(--pink);
+    --accent-color: var(--yellow);
+    --text-color: var(--white);
 }
 
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
 
+body {
+    font-family: var(--font-family-body);
+    color: var(--text-color);
+    background-color: var(--primary-color);
+}
 
+header, footer, section {
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    font-family: var(--font-family-header);
+    font-size: var(--font-size-h1);
+    color: var(--white);
+}
+
+h2 {
+    font-family: var(--font-family-header);
+    font-size: var(--font-size-h2);
+    color: var(--white);
+}
+
+h3 {
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-h3);
+    color: var(--yellow);
+}
+
+h4 {
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-h4);
+    color: var(--lavender-color);
+}
+
+p, li, th, td {
+    font-size: var(--font-size-medium);
+}
+
+nav a {
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-nav-h2);
+    color: var(--text-color);
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 0.5rem;
+    border: 1px solid var(--accent-color);
+    text-align: center;
+}
 
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
 
-
+@media (min-width: 620px) {
+    h1 {
+        font-size: calc(var(--font-size-h1) * 1.1);
+    }
+}
 
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
 
-
+@media (min-width: 950px) {
+    main {
+        display: flex;
+    }
+}
 
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
 
-
+@media (min-width: 1280px) {
+    /* Additional styling adjustments for larger screens can go here */
+}
